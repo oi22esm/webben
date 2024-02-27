@@ -8,6 +8,23 @@
 	<meta name="author" content="Elin Söderström">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="global.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function(){
+		$("#button1").click(function(){
+		$("video").animate({
+			  height: '+=100px',
+			  width: '+=100px'
+			});
+		  });
+		$("#button2").click(function(){
+		$("video").animate({
+			  height: '200px',
+			  width: '200px'
+			});
+		  });
+		});
+	</script> 
 </head>
 
 <!-- Startsida -->
@@ -64,12 +81,23 @@
 					<th>10:00-16:00</th>
 				</tr>
 			</table>
+			<br>
+			<br>
+			<p>Kontrollera storleken på videon här nedan:</p>
+			<button id ="button1"> Öka storlek </button>
+			<button id="button2"> Orginal storlek </button>
 		<div id="videon"> 
 			<!-- VIDEON STARTSIDAN -->
-			<video width="600" height="500" controls>
-				<source src="film.mp4" type="video/mp4">
-			</video>
+			<video id="video" width="200" height="200" controls source src="film.mp4" type="video/mp4"></video>
 		</div>
+		<br>
+		<br>
+		<p> Exempel på något du kan hitta på vår meny!</p>
+		<!-- Visar en bild på något från de olika rubrikerna från menyn -->
+		<script type="text/javascript" src="randomizer.js"></script>
+		<img id="bild" src="" height="400" width="600">
+		<br>
+		<br>
 	</div>
 	<hr>
 <!-- Fotheadern -->

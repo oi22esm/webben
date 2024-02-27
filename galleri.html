@@ -8,6 +8,17 @@
 	<meta name="author" content="Elin Söderström">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="global.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script> $(document).ready(function(){
+		$("button").click(function(){
+		  $("#div1").fadeIn();
+		  $("#div2").fadeIn();
+		  $("#div3").fadeIn("slow");
+		  $("#div4").fadeIn("slow");
+		  $("#div5").fadeIn(3000);
+		  $("#div6").fadeIn(3000);
+		}); 
+	});</script>
 </head>
 
 <!-- Startsida -->
@@ -35,15 +46,16 @@
 	<div class="content_area">
 		<p> Njut av några bilder på hur det ser ut hos oss!</p>
 		<p>Foton tagna av Lars Dhalin.</p>
+		<button> Klicka för att se bilderna! </button>
 	</div>
 	<div class="content_area_box">
 		<div class="photoalbum">
-			<img src="eb1.png" alt="cafebild1" height="300" width="300"> 
-			<img src="em2.png" alt="cafebild2" height="300" width="300"> 
-			<img src="em3.png" alt="cafebild3" height="300" width="300"> 
-			<img src="em4.png" alt="cafebild4" height="300" width="300"> 
-			<img src="em5.png" alt="cafebild5" height="300" width="300"> 
-			<img src="em6.png" alt="cafebild6" height="300" width="300"> 
+			<img id="div1" src="eb1.png" alt="cafebild1" style="display: none;" height="300" width="300"> 
+			<img id="div2" src="em2.png" alt="cafebild2" style="display: none;" height="300" width="300"> 	
+			<img id="div3" src="em3.png" alt="cafebild3" style="display: none;" height="300" width="300">
+			<img id="div4" src="em4.png" alt="cafebild4" style="display: none;" height="300" width="300">	
+			<img id="div5" src="em5.png" alt="cafebild5" style="display: none;" height="300" width="300"> 
+			<img id="div6" src="em6.png" alt="cafebild6" style="display: none;" height="300" width="300">
 		</div>	
 	</div>
 	<hr>

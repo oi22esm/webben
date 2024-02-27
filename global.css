@@ -107,6 +107,28 @@ p{
 	}
 }
 
+@media print{
+	h1{
+		color: black;
+	}
+	h3{
+		color: black;
+	}
+	h4{
+		color: black;
+	}
+	p{
+		color: black;
+	}
+
+	.lista{
+		display:none;
+	}
+	hr{
+		border-top: 4px solid black !important;
+	}
+
+}
 
 
 table{
@@ -176,6 +198,7 @@ hr{
 
 .videon{
 	text-align: center;
+	display: flex;
 }
 
 .photoalbum{
