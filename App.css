@@ -1,0 +1,216 @@
+
+
+#webb{
+	background-color:rgb(239, 225, 201);
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "header header header hedaar header"
+	"banner banner banner banner banner"
+	"content_area content_area content_area content_area content_area"
+	"content_area content_area content_area content_area content_area"
+	"content_area content_area content_area content_area content_area"
+	"content_area content_area content_area content_area content_area"
+	"footer footer footer footer footer";
+	grid-auto-rows: minmax(auto, 75px);
+	grid-auto-columns: minmax(auto, 400px);
+}
+
+
+.header{
+	grid-area: header;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	background-color:rgb(239, 225, 201);
+}
+
+.banner{
+	grid-area: banner;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	background-color:rgb(239, 225, 201);
+}
+.content_area {
+	text-align: center;
+	display: block;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	background-color:rgb(239, 225, 201);
+}
+
+.content_area_box{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	background-color:rgb(239, 225, 201);
+
+}
+.footer{
+	grid-area: footer;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	background-color:rgb(239, 225, 201);
+}
+
+h1{
+	color: rgb(122, 70, 35);
+	font-size: 40px;
+	font-family:cursive;
+	margin-bottom: 10px;
+}
+h3{
+	color: rgb(122, 70, 35);
+	font-size: 30px;
+	font-family:cursive;
+	margin-bottom: 5px;
+	text-align: center;
+}
+h4{
+	color: rgb(122, 70, 35);
+	font-size: 22px;
+	font-weight: 900;
+	font-family:cursive;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	text-align: center;
+}
+p{
+	color: rgb(122, 70, 35);
+	font-size: 18px;
+	font-family:cursive;
+	text-align: center;
+	margin-bottom: 0px;
+}
+@media screen and (max-width: 700px){
+	h1{
+		font-size: 30;
+	}
+	h3{
+		font-size: 25;
+	}
+	h4{
+		font-size: 18;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+
+@media print{
+	h1{
+		color: black;
+	}
+	h3{
+		color: black;
+	}
+	h4{
+		color: black;
+	}
+	p{
+		color: black;
+	}
+
+	.lista{
+		display:none;
+	}
+	hr{
+		border-top: 4px solid black !important;
+	}
+
+}
+
+
+table{
+	width: 100;
+	color: rgb(122, 70, 35);
+	font-family:cursive;
+	border-collapse: collapse;
+
+}
+hr{
+	border: none;
+	border-top: 4px solid saddlebrown;
+	margin: 20px;
+}
+.lista{
+	list-style-type: none;
+}
+.lista li{
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background-color: tan;
+	padding: 10px 15px;
+	text-align: center;
+	font-family:cursive;
+}
+.lista li a{
+	text-decoration: none;
+	color: rgb(122, 70, 35);
+	font-size: 16px;
+}
+
+.storbox{
+	width: 500px;
+	height: 800px;
+	background-color: rgb(201, 185, 164);
+	display: block;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+.mellanbox{
+	width: 400px;
+	height: 200px;
+	background-color: rgb(201, 185, 164);
+	text-align: center;
+	padding: 30px;
+}
+
+.box{
+	width: 110px;
+	height: 60px;
+	background-color: tan;
+	text-align: center;
+	border: 2px solid rgb(122, 70, 35);
+}
+.box a{
+	text-decoration: none;
+	color: rgb(122, 70, 35);
+	font-size: 20;
+	font-family:cursive;
+}
+
+.videon{
+	text-align: center;
+	display: flex;
+}
+
+.photoalbum{
+	display:flex;
+	flex-wrap: wrap;
+}
+.photoalbum img {
+	padding: 10px;
+	width: 50%;
+	box-sizing: border-box;
+}
+ .like-button {
+	border: 2px solid rgb(122, 70, 35);
+	background-color: rgb(201, 185, 164);
+	font-size: 18px;
+	font-weight: bold;
+	font-family:cursive;
+	color: rgb(122, 70, 35);
+	padding: 20px 30px;
+ }
+ .like-button:hover {
+	background-color: rgb(213, 118, 142);
+ }
